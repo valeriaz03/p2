@@ -31,8 +31,6 @@ public class HomeServlet extends HttpServlet {
 		
 		String page = request.getParameter("page");
 		
-		
-
 		if ("META-INF/context.xml".equals(page) || "WEB-INF/web.xml".equals(page)) {
 		    response.sendRedirect("/errorPage");
 		    return;
