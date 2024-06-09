@@ -18,7 +18,7 @@ import it.unisa.model.ProdottoDao;
  * Servlet implementation class HomeServlet
  */
 @WebServlet("/home")
-public class HomeServlet extends HttpServlet {
+public class HomeServlet extends HttpServlet { 
 	private static final long serialVersionUID = 1L;
        
  
@@ -30,6 +30,8 @@ public class HomeServlet extends HttpServlet {
 		String redirectedPage = request.getParameter("page");
 		
 		String page = request.getParameter("page");
+		
+		
 
 		if ("META-INF/context.xml".equals(page) || "WEB-INF/web.xml".equals(page)) {
 		    response.sendRedirect("/errorPage");
